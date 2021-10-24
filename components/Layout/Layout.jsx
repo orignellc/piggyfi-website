@@ -21,13 +21,11 @@ export const Layout = ({ page, title, description, children, metaImage }) => {
         />
         <meta
           property="og:image"
-          content={
-            metaImage ?? "https://academy.qlipit.io/images/logo_primary.png"
-          }
+          content={metaImage ?? "https://piggyfi.africa/images/logo_large.png"}
         />
         <meta
           property="og:url"
-          content={"https://academy.qlipit.io/" + page ?? ""}
+          content={"https://piggyfi.africa/" + page ?? ""}
         />
         <meta property="og:type" content="website" />
         <link rel="icon" href="/favicon.ico" />
