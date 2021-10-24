@@ -1,7 +1,7 @@
 @servers(['qlip' => 'root@68.183.255.251'])
 
 @setup
-$path = '/var/www/piggyfi';
+$path = '/var/www/piggy-fi';
 $pm2Id = 'piggyfi';
 @endsetup
 
