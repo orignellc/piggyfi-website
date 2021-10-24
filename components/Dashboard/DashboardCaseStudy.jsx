@@ -11,7 +11,7 @@ export function DashboardCaseStudy() {
         <div className="max-w-6xl px-4 mx-auto">
           <div className="w-full md:mx-auto bg-purple-deep rounded-2xl px-9 py-5 md:py-11">
             <div className="max-w-3xl w-full mx-auto text-xl md:text-2xl text-white leading-normal">
-              <table className="mb-11 w-2/3">
+              <table className="mb-11 w-full md:w-2/3">
                 <tbody>
                   <tr>
                     <td className="py-2">Country:</td>
