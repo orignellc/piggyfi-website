@@ -20,28 +20,28 @@ export function DashboardFAQ() {
             {faqs.map((faq, key) => (
               <div
                 key={key}
-                className="rounded-3xl bg-purple-deep bg-opacity-20 p-9 flex"
+                className="rounded-3xl bg-purple-deep bg-opacity-20 p-9"
                 style={{
                   boxShadow: "0px 18.6667px 46.6667px rgba(0, 0, 0, 0.5)",
                 }}
               >
-                <div className="pt-1">
-                  <span
-                    className="cursor-pointer"
-                    onClick={() => toggleFaq(key)}
-                  >
-                    <Plus width="24" height={24} />
-                  </span>
-                </div>
-                <div className="ml-2">
-                  <h3
-                    className="text-white text-xl md:text-2xl font-medium mb-3 cursor-pointer"
-                    onClick={() => toggleFaq(key)}
-                  >
-                    {faq.heading}
-                  </h3>
+                <div className="">
+                  <div className="flex items-center mb-3">
+                    <span
+                      className="cursor-pointer"
+                      onClick={() => toggleFaq(key)}
+                    >
+                      <Plus width="24" height={24} />
+                    </span>
+                    <h3
+                      className="text-white text-xl md:text-2xl font-medium ml-2 cursor-pointer"
+                      onClick={() => toggleFaq(key)}
+                    >
+                      {faq.heading}
+                    </h3>
+                  </div>
                   {isShowing(key) ? (
-                    <p className="text-white text-opacity-50 font-light text-lg">
+                    <p className="text-white text-opacity-80 font-light text-lg">
                       {faq.body}
                     </p>
                   ) : (

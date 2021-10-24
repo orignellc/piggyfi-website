@@ -1,5 +1,6 @@
 import Head from "next/head";
 import { Footer, Menu } from "./index";
+import { ModalMobileNav } from "../Modals";
 
 export const Layout = ({ page, title, description, children, metaImage }) => {
   return (
@@ -83,6 +84,7 @@ export const Layout = ({ page, title, description, children, metaImage }) => {
       {children}
       <Footer />
       {/* Global modals across all pages */}
+      <ModalMobileNav />
     </>
   );
 };

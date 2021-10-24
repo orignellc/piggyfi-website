@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import { toggleMobileNavModal } from "../Modals";
 
 export function Menu() {
   return (
@@ -26,8 +27,8 @@ export function Menu() {
           <Link href="/#how-it-works">
             <a className="mr-8 hover:text-purple">How It works</a>
           </Link>
-          <Link href="/#case-studies">
-            <a className="mr-8 hover:text-purple">Case studies</a>
+          <Link href="/#case-study">
+            <a className="mr-8 hover:text-purple">Case study</a>
           </Link>
           <Link href="/#faqs">
             <a className="mr-8 hover:text-purple">FAQs</a>
@@ -76,7 +77,10 @@ export function Menu() {
             </svg>
           </span> */}
 
-          <button className="md:hidden ml-4 p-2">
+          <button
+            className="md:hidden ml-4 p-2"
+            onClick={() => toggleMobileNavModal()}
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-6 w-6"

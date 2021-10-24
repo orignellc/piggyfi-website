@@ -31,8 +31,8 @@ export function Footer() {
               <Link href="/#how-it-works">
                 <a className="mr-8 hover:text-purple">How It works</a>
               </Link>
-              <Link href="/#case-studies">
-                <a className="mr-8 hover:text-purple">Case studies</a>
+              <Link href="/#case-study">
+                <a className="mr-8 hover:text-purple">Case study</a>
               </Link>
               <Link href="/#faqs">
                 <a className="mr-8 hover:text-purple">FAQs</a>
