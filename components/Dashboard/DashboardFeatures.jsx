@@ -68,13 +68,8 @@ const features = [
     body: "Be able to save all of your earnings in stable currencies",
   },
   {
-    iconPath: "/images/loan.png",
-    name: "Loan",
-    body: "Loan money from Piggyfi without any interest",
-  },
-  {
     iconPath: "/images/p2p.png",
-    name: "P2P",
+    name: "Simple P2P",
     body: "Conveniently exchange your fiat into stable currencies",
   },
   {
@@ -84,12 +79,17 @@ const features = [
   },
   {
     iconPath: "/images/transaction.png",
-    name: "In-app International transfer",
-    body: "Easily make international transfers on the mobile app",
+    name: "In-app InterAfrica transfer",
+    body: "Easily make inter-africa transfers on the mobile app",
   },
   {
     iconPath: "/images/payment.png",
-    name: "Request Crypto Payment",
-    body: "Easily make international transfers on the mobile app",
+    name: "Receive Payment",
+    body: "Easily receive funds from anywhere in the world within minutes",
+  },
+  {
+    iconPath: "/images/loan.png",
+    name: "Request Features",
+    body: "Contact us tto request more features",
   },
 ];

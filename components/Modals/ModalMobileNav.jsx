@@ -34,16 +34,36 @@ export function ModalMobileNav() {
 
             <div className="grid grid-rows-4 gap-8 text-gray-900 text-lg md:text-xl font-sm text-center">
               <Link href="/#features">
-                <a className="hover:text-purple">Features</a>
+                <a
+                  className="hover:text-purple"
+                  onClick={() => toggleMobileMenuModal(false)}
+                >
+                  Features
+                </a>
               </Link>
               <Link href="/#how-it-works">
-                <a className="hover:text-purple">How It works</a>
+                <a
+                  className="hover:text-purple"
+                  onClick={() => toggleMobileMenuModal(false)}
+                >
+                  How It works
+                </a>
               </Link>
               <Link href="/#case-study">
-                <a className="hover:text-purple">Case study</a>
+                <a
+                  className="hover:text-purple"
+                  onClick={() => toggleMobileMenuModal(false)}
+                >
+                  Case study
+                </a>
               </Link>
               <Link href="/#faqs">
-                <a className="hover:text-purple">FAQs</a>
+                <a
+                  className="hover:text-purple"
+                  onClick={() => toggleMobileMenuModal(false)}
+                >
+                  FAQs
+                </a>
               </Link>
             </div>
 

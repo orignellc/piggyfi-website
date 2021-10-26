@@ -1,5 +1,6 @@
 import { Telegram, Medium, Twitter, Plus } from "../Icons";
 import { useState } from "react";
+import Link from "next/link";
 
 let show, setShow;
 
@@ -34,7 +35,7 @@ export function DashboardFAQ() {
                       <Plus width="24" height={24} />
                     </span>
                     <h3
-                      className="text-white text-xl md:text-2xl font-medium ml-2 cursor-pointer"
+                      className="text-white text-lg sm:text-xl font-medium ml-2 cursor-pointer"
                       onClick={() => toggleFaq(key)}
                     >
                       {faq.heading}
@@ -57,7 +58,7 @@ export function DashboardFAQ() {
             <br />
             Join Our community or send us an
             <a
-              href="mailto:#"
+              href="mailto:piggyfiafrica@gmail.com"
               className="text-blue-600 hover:text-indigo-800 focus:bg-indigo-700"
             >
               &nbsp;Email
@@ -75,9 +76,16 @@ export function DashboardFAQ() {
               </p>
             </div>
             <div className="flex justify-center md:justify-end items-center">
-              <Twitter className="h-16 md:h-24 w-16 md:w-24 mr-10 md:mr-14" />
-              <Telegram className="h-16 md:h-24 w-16 md:w-24 mr-10 md:mr-14" />
-              <Medium className="h-16 md:h-24 w-16 md:w-24" />
+              <Link href="http://twitter.com/@PiggyFi_Africa">
+                <a>
+                  <Twitter className="h-16 md:h-24 w-16 md:w-24 mr-10 md:mr-14" />
+                </a>
+              </Link>
+              <Link href="https://t.me/joinchat/ta7u0Qk1V7s1OWRk">
+                <a>
+                  <Telegram className="h-16 md:h-24 w-16 md:w-24 mr-10 md:mr-14" />
+                </a>
+              </Link>
             </div>
           </div>
 

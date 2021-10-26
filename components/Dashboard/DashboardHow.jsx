@@ -1,8 +1,16 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { Mark } from "../Icons";
 
-let active, setActive;
+let active, switchActive;
+let counter, setCounter;
+let interval;
+
 export function DashboardHow() {
-  [active, setActive] = useState(0);
+  [active, switchActive] = useState(0);
+  [counter, setCounter] = useState(0);
+
+  useEffect(intervalForCounterIncrementEffect, []);
+  // setIntervalForCounterIncrement(useEffect);
 
   return (
     <div className="bg-black" id="how-it-works">
@@ -71,22 +79,34 @@ export function DashboardHow() {
 
               <div className="rounded-3xl bg-purple-deep px-7 py-11 mb-10 md:flex items-stretch text-lg md:text-xl font-light card-shadow">
                 <ul>
-                  <li className="mb-14">
-                    <span className="font-medium">Faster transactions: </span>
-                    Diversified sharding allowing faster transactions
+                  <li className="mb-14 flex">
+                    <Mark className="h-7 w-7 inline mt-1 mr-2 flex-shrink-0" />
+                    <div className="">
+                      <span className="font-medium">Faster transactions: </span>
+                      Diversified sharding allowing faster transactions
+                    </div>
                   </li>
-                  <li className="mb-14">
-                    <span className="font-medium">Cheaper fees: </span>
-                    Lower gas fees for all transactions
+                  <li className="mb-14 flex">
+                    <Mark className="h-7 w-7 inline mt-1 mr-2 flex-shrink-0" />
+                    <div className="">
+                      <span className="font-medium">Cheaper fees: </span>
+                      Lower gas fees for all transactions
+                    </div>
                   </li>
-                  <li className="mb-14">
-                    <span className="font-medium">Highly scalable: </span>
-                    Diversified sharding allowing faster transactions
+                  <li className="mb-14 flex">
+                    <Mark className="h-7 w-7 inline mt-1 mr-2 flex-shrink-0" />
+                    <div className="">
+                      <span className="font-medium">Highly scalable: </span>
+                      Diversified sharding allowing faster transactions
+                    </div>
                   </li>
-                  <li>
-                    <span className="font-medium">Integration: </span>
-                    Integrating functionality quickly making product cycle
-                    shorter
+                  <li className="mb-14 flex">
+                    <Mark className="h-7 w-7 inline mt-1 mr-2 flex-shrink-0" />
+                    <div className="">
+                      <span className="font-medium">Integration: </span>
+                      Integrating functionality quickly making product cycle
+                      shorter
+                    </div>
                   </li>
                 </ul>
               </div>
@@ -99,22 +119,34 @@ export function DashboardHow() {
 
               <div className="rounded-3xl bg-purple-deep px-7 py-11 mb-10 md:flex items-stretch text-lg md:text-xl font-light card-shadow">
                 <ul>
-                  <li className="mb-14">
-                    <span className="font-medium">Interoperability: </span>
-                    Bridge to All Chains including Ethereum
+                  <li className="mb-14 flex">
+                    <Mark className="h-7 w-7 inline mt-1 mr-2 flex-shrink-0" />
+                    <div className="">
+                      <span className="font-medium">Interoperability: </span>
+                      Bridge to All Chains including Ethereum
+                    </div>
                   </li>
-                  <li className="mb-14">
-                    <span className="font-medium">Maximum security: </span>
-                    Diversified sharding allowing faster transactions
+                  <li className="mb-14 flex">
+                    <Mark className="h-7 w-7 inline mt-1 mr-2 flex-shrink-0" />
+                    <div className="">
+                      <span className="font-medium">Maximum security: </span>
+                      Diversified sharding allowing faster transactions
+                    </div>
                   </li>
-                  <li className="mb-14">
-                    <span className="font-medium">Faster: </span>
-                    Runs Ethereum applications with 2-second transaction
-                    finality
+                  <li className="mb-14 flex">
+                    <Mark className="h-7 w-7 inline mt-1 mr-2 flex-shrink-0" />
+                    <div className="">
+                      <span className="font-medium">Faster: </span>
+                      Runs Ethereum applications with 2-second transaction
+                      finality
+                    </div>
                   </li>
-                  <li>
-                    <span className="font-medium">Cheaper: </span>
-                    1000 times lower transaction fees
+                  <li className="mb-14 flex">
+                    <Mark className="h-7 w-7 inline mt-1 mr-2 flex-shrink-0" />
+                    <div className="">
+                      <span className="font-medium">Cheaper: </span>
+                      1000 times lower transaction fees
+                    </div>
                   </li>
                 </ul>
               </div>
@@ -134,7 +166,7 @@ const steps = [
   },
   {
     iconPath: "/images/convert.png",
-    name: "Convert your funds to USD (usdc)",
+    name: "Convert your funds to USD",
     body: "Choose your preferred deposit option like bank transfer, credit/debit card (for fiat), P2P or send digital assets directly to your wallet",
   },
   {
@@ -152,10 +184,12 @@ function isActive(key) {
   return key === active;
 }
 
-function switchActive(key) {
-  if (!isActive(key)) {
-    setActive(key);
-  } else {
-    setActive(null);
-  }
+function intervalForCounterIncrementEffect() {
+  interval = setInterval(() => {
+    setCounter((prevCount) => prevCount + 1);
+    switchActive(counter % 3);
+  }, 6000);
+  return () => {
+    clearInterval(interval);
+  };
 }
