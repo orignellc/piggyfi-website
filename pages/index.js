@@ -9,7 +9,7 @@ import {
   DashboardCaseStudy,
   DashboardFAQ,
   RedialGradient,
-} from "../components";
+} from "../src/components";
 
 export default function Home() {
   return (

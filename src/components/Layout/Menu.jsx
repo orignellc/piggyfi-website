@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { toggleMobileNavModal } from "../Modals";
+import { ModalCountries, toggleCountry, toggleMobileNavModal } from "../Modals";
 
 export function Menu() {
   return (
@@ -35,13 +35,16 @@ export function Menu() {
           </Link>
         </div>
         <div className="flex ml-auto">
-          <span className="cursor-pointer hover:bg-gray-200 hover:text-black p-2">
+          <a
+            onClick={toggleCountry}
+            className="cursor-pointer hover:bg-gray-200 hover:text-black p-2"
+          >
             <img
               src="/images/nigeria.png"
               alt="Nigeria"
               className="inline h-8 ml-2"
             />
-          </span>
+          </a>
 
           {/* <span className="mr-4 p-2">
             <svg
@@ -98,6 +101,7 @@ export function Menu() {
           </button>
         </div>
       </div>
+      <ModalCountries />
     </nav>
   );
 }

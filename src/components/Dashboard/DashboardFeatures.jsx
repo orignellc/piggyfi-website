@@ -53,6 +53,20 @@ export function DashboardFeatures() {
                   </p>
                 </div>
               ))}
+
+              <div className="rounded-3xl bg-purple-deep p-9 text-center card-shadow">
+                <img
+                  src="/images/plus.png"
+                  alt="Request Features"
+                  className="mb-6 h-16 mx-auto"
+                />
+                <h3 className="text-white text-xl md:text-2xl font-bold mb-4">
+                  Request Features
+                </h3>
+                <p className="text-white text-opacity-50 font-light">
+                  Contact us tto request more features
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -69,7 +83,7 @@ const features = [
   },
   {
     iconPath: "/images/p2p.png",
-    name: "Simple P2P",
+    name: "Automated P2P",
     body: "Conveniently exchange your fiat into stable currencies",
   },
   {
@@ -79,7 +93,7 @@ const features = [
   },
   {
     iconPath: "/images/transaction.png",
-    name: "In-app InterAfrica transfer",
+    name: "In-app inter-africa transfer",
     body: "Easily make inter-africa transfers on the mobile app",
   },
   {
@@ -87,9 +101,9 @@ const features = [
     name: "Receive Payment",
     body: "Easily receive funds from anywhere in the world within minutes",
   },
-  {
-    iconPath: "/images/loan.png",
-    name: "Request Features",
-    body: "Contact us tto request more features",
-  },
+  // {
+  //   iconPath: "/images/loan.png",
+  //   name: "Request Features",
+  //   body: "Contact us tto request more features",
+  // },
 ];
