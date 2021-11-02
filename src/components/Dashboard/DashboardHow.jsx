@@ -21,7 +21,7 @@ export function DashboardHow() {
               How it works
             </h2>
             <p className="font-light text-xl md:text-3xl text-white">
-              Simple and clear to use
+              Simple to use
             </p>
           </div>
 
@@ -167,12 +167,12 @@ const steps = [
   {
     iconPath: "/images/convert.png",
     name: "Convert your funds to USD",
-    body: "Choose your preferred deposit option like bank transfer, credit/debit card (for fiat), P2P or send digital assets directly to your wallet",
+    body: "Convert your local currency to a stable digital currency such as USDT through a secured P2P system. Pay via bank transfer with a 1% transaction fee.",
   },
   {
     iconPath: "/images/payment-screen.png",
-    name: "Start Saving, Make Bills Payment & International Transfers",
-    body: "Start saving in USD or any stable currency, make all bills payment as well as international transfers",
+    name: "Start Saving, Make Bills Payment & Transfers",
+    body: "Start saving in USD or any stable currency, make all bill payments, and execute transfers from your wallet to other PiggyFi users across 6 African countries.",
   },
 ];
 

@@ -18,11 +18,8 @@ export default function Home() {
         <DashboardHero />
         <DashboardFeatures />
         <DashboardHow />
-        <div className="bg-black relative">
-          {/*<RedialGradient className="right-2/3 left-0 top-9/20 bottom-9/20" />*/}
-          <DashboardCaseStudy />
-          <DashboardFAQ />
-        </div>
+        <DashboardCaseStudy />
+        <DashboardFAQ />
       </main>
     </Layout>
   );

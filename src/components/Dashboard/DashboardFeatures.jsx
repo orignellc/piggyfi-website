@@ -27,7 +27,7 @@ export function DashboardFeatures() {
                 Our Features
               </h2>
               <p className="font-light text-lg md:text-2xl text-white">
-                Explore great features coming soon by PiggyFi
+                Explore the great features coming soon to PiggyFi
               </p>
             </div>
 
@@ -64,7 +64,10 @@ export function DashboardFeatures() {
                   Request Features
                 </h3>
                 <p className="text-white text-opacity-50 font-light">
-                  Contact us tto request more features
+                  What other features would you like to see on PiggyFi?{" "}
+                  <a href="mailto:piggyfi.africa@gmail.com" className="">
+                    Tell us
+                  </a>
                 </p>
               </div>
             </div>
@@ -79,27 +82,27 @@ const features = [
   {
     iconPath: "/images/savings.png",
     name: "Save",
-    body: "Be able to save all of your earnings in stable currencies",
+    body: "Be able to save all of your local earnings in USD",
   },
   {
     iconPath: "/images/p2p.png",
     name: "Automated P2P",
-    body: "Conveniently exchange your fiat into stable currencies",
+    body: "Conveniently convert your local currency to US dollars and vice versa.",
   },
   {
     iconPath: "/images/bill.png",
     name: "Bill Payment",
-    body: "Pay all bills from the platform",
+    body: "Pay for your airtime recharge, data, electricity, and more from you USD wallet on the platform.",
   },
   {
     iconPath: "/images/transaction.png",
-    name: "In-app inter-africa transfer",
-    body: "Easily make inter-africa transfers on the mobile app",
+    name: "In-app Inter-Africa transfer",
+    body: "Transfer USD to other African countries that can be converted to their local currency using PiggyFi",
   },
   {
     iconPath: "/images/payment.png",
     name: "Receive Payment",
-    body: "Easily receive funds from anywhere in the world within minutes",
+    body: "Request payments and receive funds in USD from other PiggyFi users",
   },
   // {
   //   iconPath: "/images/loan.png",

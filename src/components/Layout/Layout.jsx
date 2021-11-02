@@ -21,7 +21,9 @@ export const Layout = ({ page, title, description, children, metaImage }) => {
         />
         <meta
           property="og:image"
-          content={metaImage ?? "https://piggyfi.africa/images/logo_large.png"}
+          content={
+            metaImage ?? "https://piggyfi.africa/manifest/icon-192x192.png"
+          }
         />
         <meta
           property="og:url"

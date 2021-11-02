@@ -1,5 +1,6 @@
 import { useRef, useState } from "react";
 import { Modal } from "./index";
+import { subscribe } from "../../helpers/subscribe";
 
 let processing, setProcessing;
 let mobileEmailSubscribe, setMobileEmailSubscribe;
@@ -16,7 +17,7 @@ export function ModalEmailSubscribe() {
     mobileEmailSubscribe && (
       <Modal>
         <div>
-          <form onSubmit={(e) => subscribe(e)}>
+          <form onSubmit={(e) => submit(e)}>
             <div className="">
               <input
                 ref={emailRef}
@@ -68,47 +69,27 @@ export function ModalEmailSubscribe() {
   );
 }
 
-function subscribe(e) {
+function submit(e) {
   e.preventDefault();
-
-  //Loader
   setProcessing(true);
 
-  fetch(
-    `${
-      process.env.PROXY_SERVER ?? "https://obscure-brook-72299.herokuapp.com/"
-    }https://emailoctopus.com/api/1.5/lists/a884fe8f-37f2-11ec-96e5-06b4694bee2a/contacts`,
-    {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        "Access-Control-Allow-Origin": "*",
-      },
-      body: JSON.stringify({
-        api_key:
-          process.env.EMAIL_OCTOPUS_API_KEY ??
-          "0006e14f-1c9a-44c7-a546-fedf561ee67b",
-        email_address: emailRef.current.value,
-        fields: {
-          FirstName: firstnameRef.current.value,
-          LastName: lastnameRef.current.value,
-        },
-        status: "SUBSCRIBED",
-      }),
-    }
-  )
-    .then((response) => {
-      window.localStorage.setItem("popped", true);
-      setProcessing(false);
-      emailRef.current.value = "";
-      firstnameRef.current.value = "";
-      lastnameRef.current.value = "";
-    })
-    .catch((error) => {
-      //@Todo Sentry
-      console.log(error);
-      setProcessing(false);
-    });
+  const done = () => {
+    window.localStorage.setItem("popped", true);
+    setProcessing(false);
+    emailRef.current.value = "";
+    firstnameRef.current.value = "";
+    lastnameRef.current.value = "";
+  };
+
+  const failed = () => setProcessing(false);
+
+  subscribe({
+    failed,
+    done,
+    email: emailRef.current.value,
+    firstname: firstnameRef.current.value,
+    lastname: lastnameRef.current.value,
+  });
 }
 
 export function toggleEmailSubscribe() {

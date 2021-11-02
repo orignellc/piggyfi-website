@@ -8,7 +8,7 @@ export function DashboardFAQ() {
   [show, setShow] = useState(null);
 
   return (
-    <div className="relative" id="faqs">
+    <div className="relative bg-black" id="faqs">
       <div className="py-14 md:py-20">
         <div className="text-center mb-14">
           <h2 className="text-3xl md:text-5xl font-medium text-white">
@@ -115,7 +115,7 @@ export function DashboardFAQ() {
 const faqs = [
   {
     heading: "What is PiggyFi?",
-    body: "A Defi savings platform without the need of an ethereum client such as Metamask, that allows anyone to save in a stable currency such as the US Dollars, by leveraging on stable cryptocurrencies such as BUSD and generating interest on savings by staking in lending protocols.",
+    body: "A Decentralised Finance (Defi) savings platform, built on the blockchain without the need for an ethereum client such as Metamask or Trust Wallet. PiggyFi allows Africans to save in a stable currency like US Dollars by leveraging stable cryptocurrencies like USDT and earning interest on savings by staking in lending protocols.",
   },
   {
     heading: "Does PiggyFi work with any traditional Financial Institution?",
@@ -123,27 +123,47 @@ const faqs = [
   },
   {
     heading: "What problem does PiggyFi solves?",
-    body: "Sub-Saharan Africa has one of the highest inflation rates in the world. Individuals and Families saving money in their local currency do not have an easy way to guard their life savings against devaluation. PiggyFi is out to solve Inflation problem in Sub-Saharan Africa",
+    body:
+      "Sub-Saharan Africa has one of the highest inflation rates in the world.\n" +
+      "Individuals and Families saving money in their local currency do not have an easy way to guard their life savings against devaluation.\n" +
+      "PiggyFi is out to solve the Inflation problem in Sub-Saharan Africa\n",
   },
   {
-    heading: "How does PiggyFi benefit from building on Xend Finance SDK?",
-    body: "All transactions performed on PiggyFi are carried out directly on the blockchain and each transaction costs a fee. By building on Harmony, we are able to save a lot on transaction cost due to the low transaction fee on the Harmony network",
-  },
-  {
-    heading: "How do you convert my funds to USD using blockchain?",
-    body: "By using an automated P2P system, you can convert your local currency into BUSD, a stable currency on the blockchain, which is an equivalent of the US Dollar and vice versa.",
-  },
-  {
-    heading: "How does PiggyFi benefit from building on Harmony?",
-    body: "All transactions performed on PiggyFi are carried out directly on the blockchain and each transaction costs a fee. By building on Harmony, we are able to save a lot on transaction cost due to the low transaction fee on the Harmony network",
-  },
-  {
-    heading: "How secure is PiggyFi?",
-    body: "All funds deposited on the PiggyFi platform are not controlled by anyone but held securely by a smart contract code(learn more).",
+    heading:
+      "Why is PiggyFi Better than other Traditional Fintech Savings Platforms?",
+    body: "PiggyFi is a blockchain-based platform. To prevent fraud, all transactions are transparent and open to everyone. There are no limits to USD transactions as long as you pass the KYC checks; and most importantly, your funds are secured on the blockchain and are not held by any single entity.",
   },
   {
     heading: "Do I need knowledge of blockchain to use PiggyFi?",
-    body: "Anyone with a smart device and access to the internet who wants to save their funds in a stable currency to guard it against inflation can use the PiggyFi platform.",
+    body: "Anyone from Sub-Saharan Africa with a smart device and access to the internet who wants to save their funds in a stable currency to guard it against inflation can use the PiggyFi platform.",
+  },
+  {
+    heading: "How do you convert my funds to USD using blockchain?",
+    body: "By using an automated P2P system, you can convert your local currency into USDT, a stable currency on the blockchain, which is an equivalent of the US Dollar and vice versa.",
+  },
+  {
+    heading: "What is peer-to-peer (P2P) trading?",
+    body: "P2P (peer-to-peer) trade is also known as customer-to-customer trading. In a peer-to-peer (P2P) transaction, a Piggyfi user transacts directly with his or her vendor, exchanging local currency offline and verifying the transaction online. The digital asset is released to the buyer once both parties have confirmed the offline local currency exchange. By automating the process PiggyFi removes the technicalities for day-to-day users and protects you from fraud by onboarding verified P2P vendors who validate your transactions in less than 5 minutes.",
+  },
+  {
+    heading: "How can I withdraw funds on PiggyFi?",
+    body: "Using the P2P system you can easily convert your USD into your local currency. PiggyFi automates the process by selecting the first available vendor with the best offer who validates your transaction within 5 minutes.",
+  },
+  {
+    heading: "How secure is PiggyFi?",
+    body: "All funds deposited on the PiggyFi platform are not controlled by anyone but held securely by a smart contract code on the blockchain(learn more).",
+  },
+  {
+    heading: "How secure is PiggyFi?",
+    body: "All funds deposited on the PiggyFi platform are not controlled by anyone but held securely by a smart contract code on the blockchain(learn more).",
+  },
+  {
+    heading: "How does PiggyFi benefit from building on Xend Finance SDK?",
+    body: "By building on Xend Finance SDK, It becomes easier to quickly iterate our products and launch without having to worry about setting up the whole system of integrating and securing with different lending protocols directly. We also benefit from earning $XEND tokens which are in turn distributed to PiggyFi users",
+  },
+  {
+    heading: "How does PiggyFi benefit from building on Harmony?",
+    body: "All transactions performed on PiggyFi are carried out directly on the blockchain and each transaction costs a fee. By building on Harmony, we are able to save a lot on transaction costs due to the low transaction fee on the Harmony network. Furthermore, with Harmony Bridge, we are able to Bridge to Ethereum and other chains.",
   },
 ];
 

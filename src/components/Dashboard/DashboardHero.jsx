@@ -13,8 +13,9 @@ export function DashboardHero() {
               A smart <span className="inline-block">way to save</span>
             </h1>
             <p className="text-2xl md:text-3xl text-white font-light mb-11 leading-normal">
-              A convenient way for Africans to convert their earnings into
-              stable currency like USD and guard against inflation
+              A simple way for Africans to <b>save and spend</b> their money in
+              a stable currency like the <b>US dollar</b> to protect themselves
+              from <b>inflation</b>.
             </p>
             <button
               className="text-white py-5 px-11 rounded-2xl btn-bg-gradient-purple"

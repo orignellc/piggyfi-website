@@ -1,6 +1,6 @@
 export function DashboardCaseStudy() {
   return (
-    <div className="relative" id="case-study">
+    <div className="relative bg-black" id="case-study">
       <div className="py-14 md:py-20">
         <div className="text-center mb-14">
           <h2 className="text-3xl md:text-5xl font-medium text-white">
