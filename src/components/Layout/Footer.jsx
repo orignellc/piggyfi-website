@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import { ModalEmailSubscribe, toggleEmailSubscribe } from "../Modals";
 
 export function Footer() {
   return (
@@ -48,9 +49,12 @@ export function Footer() {
                 Subscribe to our newsletter to get PiggyFi update.
               </p>
 
-              <div className="p-1 md:p-2 bg-white rounded-2xl flex">
-                <input type="text" className="w-full mx-2 p-2 text-black" />
-                <button className="p-2 md:p-2.5 text-white text-sm md:text-xl btn-bg-gradient-purple rounded-lg md:rounded-2xl">
+              <div
+                className="p-1 md:p-2 bg-white rounded-2xl flex"
+                onClick={toggleEmailSubscribe}
+              >
+                {/*<input type="text" className="w-full mx-2 p-2 text-black" />*/}
+                <button className="p-2 md:p-2.5 ml-auto text-white text-sm md:text-xl btn-bg-gradient-purple rounded-lg md:rounded-2xl">
                   Subscribe
                 </button>
               </div>
@@ -64,6 +68,7 @@ export function Footer() {
           </p>
         </div>
       </div>
+      <ModalEmailSubscribe />
     </div>
   );
 }
