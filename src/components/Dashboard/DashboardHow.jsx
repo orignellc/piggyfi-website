@@ -97,15 +97,16 @@ export function DashboardHow() {
                     <Mark className="h-7 w-7 inline mt-1 mr-2 flex-shrink-0" />
                     <div className="">
                       <span className="font-medium">Highly scalable: </span>
-                      Diversified sharding allowing faster transactions
+                      Integrating functionality quickly, making the product
+                      cycle shorter
                     </div>
                   </li>
                   <li className="mb-14 flex">
                     <Mark className="h-7 w-7 inline mt-1 mr-2 flex-shrink-0" />
                     <div className="">
-                      <span className="font-medium">Integration: </span>
-                      Integrating functionality quickly making product cycle
-                      shorter
+                      <span className="font-medium">Higher Interest: </span>
+                      Xend tokens earned, will be distributed to customers in
+                      USD as interest
                     </div>
                   </li>
                 </ul>
@@ -130,7 +131,7 @@ export function DashboardHow() {
                     <Mark className="h-7 w-7 inline mt-1 mr-2 flex-shrink-0" />
                     <div className="">
                       <span className="font-medium">Maximum security: </span>
-                      Diversified sharding allowing faster transactions
+                      Delegated Proof-of-Stake consensus mechanism
                     </div>
                   </li>
                   <li className="mb-14 flex">
