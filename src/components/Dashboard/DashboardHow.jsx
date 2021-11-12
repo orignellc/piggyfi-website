@@ -152,6 +152,29 @@ export function DashboardHow() {
                 </ul>
               </div>
             </div>
+
+            <div className="text-white">
+              <h4 className="text-white text-2xl md:text-4xl text-center font-medium mb-8">
+                Building on Cronos
+              </h4>
+
+              <div className="rounded-3xl bg-purple-deep px-7 py-11 mb-10 md:flex items-stretch text-lg md:text-xl font-light card-shadow">
+                <ul>
+                  <li className="mb-14 flex">
+                    <Mark className="h-7 w-7 inline mt-1 mr-2 flex-shrink-0" />
+                    <div className="">
+                      Transacting across all the EVM compatible chains
+                    </div>
+                  </li>
+                  <li className="mb-14 flex">
+                    <Mark className="h-7 w-7 inline mt-1 mr-2 flex-shrink-0" />
+                    <div className="">
+                      Instant Transaction to facilitate quick funds transfers for customers
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
       </div>
