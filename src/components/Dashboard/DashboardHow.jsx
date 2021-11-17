@@ -173,8 +173,8 @@ export function DashboardHow() {
                     <div className="">
                       <span className="font-medium">Scalable: </span>
                       Cronos can process way more transactions per minute than
-                      the EVM, making it faster, cheaper and greener to execute
-                      smart contracts
+                      the EVM, making it faster, cheaper and greener 🌱 to
+                      execute smart contracts
                     </div>
                   </li>
                   <li className="mb-14 flex">
