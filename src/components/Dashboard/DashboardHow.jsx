@@ -155,7 +155,7 @@ export function DashboardHow() {
 
             <div className="text-white">
               <h4 className="text-white text-2xl md:text-4xl text-center font-medium mb-8">
-                Building on Cronos
+                Building with Cronos Powered by Ethermint
               </h4>
 
               <div className="rounded-3xl bg-purple-deep px-7 py-11 mb-10 md:flex items-stretch text-lg md:text-xl font-light card-shadow">
@@ -163,13 +163,36 @@ export function DashboardHow() {
                   <li className="mb-14 flex">
                     <Mark className="h-7 w-7 inline mt-1 mr-2 flex-shrink-0" />
                     <div className="">
-                      Transacting across all the EVM compatible chains
+                      <span className="font-medium">EVM Compatible: </span>
+                      Our smart contracts will be deployed on the EVM. Cronos
+                      powered by Ethermint supported Dapps deployed on Ethereum
                     </div>
                   </li>
                   <li className="mb-14 flex">
                     <Mark className="h-7 w-7 inline mt-1 mr-2 flex-shrink-0" />
                     <div className="">
-                      Instant Transaction to facilitate quick funds transfers for customers
+                      <span className="font-medium">Scalable: </span>
+                      Cronos can process way more transactions per minute than
+                      the EVM, making it faster, cheaper and greener to execute
+                      smart contracts
+                    </div>
+                  </li>
+                  <li className="mb-14 flex">
+                    <Mark className="h-7 w-7 inline mt-1 mr-2 flex-shrink-0" />
+                    <div className="">
+                      <span className="font-medium">Interoperable: </span>
+                      It is easy to exchange assets and services, transfer
+                      value, and allow blockchains to talk to each other without
+                      running into the scaling issues on Cronos, which is common
+                      amongst some of the largest blockchains today
+                    </div>
+                  </li>
+                  <li className="mb-14 flex">
+                    <Mark className="h-7 w-7 inline mt-1 mr-2 flex-shrink-0" />
+                    <div className="">
+                      <span className="font-medium">Easy deployment: </span>
+                      We can quickly and easily deploy on the Cronos network
+                      once we are ready to go live without running into issues.
                     </div>
                   </li>
                 </ul>
