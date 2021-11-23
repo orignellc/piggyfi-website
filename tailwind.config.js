@@ -8,6 +8,7 @@ module.exports = {
         purple: "#8913C0",
         "purple-hero": "rgba(137, 19, 192, 0.3)",
         "purple-deep": "#1D1A27",
+        yellow: "#E1AD01",
       },
       fontFamily: {
         body: [

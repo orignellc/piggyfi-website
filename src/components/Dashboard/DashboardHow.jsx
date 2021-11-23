@@ -155,7 +155,7 @@ export function DashboardHow() {
 
             <div className="text-white">
               <h4 className="text-white text-2xl md:text-4xl text-center font-medium mb-8">
-                Building with Cronos Powered by Ethermint
+                Building with Cronos
               </h4>
 
               <div className="rounded-3xl bg-purple-deep px-7 py-11 mb-10 md:flex items-stretch text-lg md:text-xl font-light card-shadow">
@@ -193,6 +193,58 @@ export function DashboardHow() {
                       <span className="font-medium">Easy deployment: </span>
                       We can quickly and easily deploy on the Cronos network
                       once we are ready to go live without running into issues.
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div className="text-white">
+              <h4 className="text-white text-2xl md:text-4xl text-center font-medium mb-8">
+                Building with Celo Platform
+              </h4>
+
+              <div className="rounded-3xl bg-purple-deep px-7 py-11 mb-10 md:flex items-stretch text-lg md:text-xl font-light card-shadow">
+                <ul>
+                  <li className="mb-14 flex">
+                    <Mark className="h-7 w-7 inline mt-1 mr-2 flex-shrink-0" />
+                    <div className="">
+                      <span className="font-medium">Celo Asset: </span>
+                      With the Celo Dollar (cUSD) stable currency tracking the
+                      US Dollar, we will be able to move value across countries
+                      faster, cheaper.
+                    </div>
+                  </li>
+                  <li className="mb-14 flex">
+                    <Mark className="h-7 w-7 inline mt-1 mr-2 flex-shrink-0" />
+                    <div className="">
+                      <span className="font-medium">Low Fees: </span>
+                      With the volume of daily transactions that would be
+                      carried out on our platform daily, Celo offers us
+                      Ultra-low network transaction fees thereby saving us a lot
+                      of costs.
+                    </div>
+                  </li>
+                  <li className="mb-14 flex">
+                    <Mark className="h-7 w-7 inline mt-1 mr-2 flex-shrink-0" />
+                    <div className="">
+                      <span className="font-medium">Staking: </span>
+                      We will take advantage of Celo POS used to secure the
+                      network, and use saved assets on our platform to generate
+                      yield which is in turn distributed as an interest to our
+                      user’s savings.
+                    </div>
+                  </li>
+                  <li className="mb-14 flex">
+                    <Mark className="h-7 w-7 inline mt-1 mr-2 flex-shrink-0" />
+                    <div className="">
+                      <span className="font-medium">
+                        Optimized for Financial Application:{" "}
+                      </span>
+                      Celo’s industry-leading decentralized phone number
+                      verification will allow users to easily send or request
+                      digital currencies across the border from any mobile
+                      number
                     </div>
                   </li>
                 </ul>
