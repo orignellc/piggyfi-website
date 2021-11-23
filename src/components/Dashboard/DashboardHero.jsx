@@ -1,3 +1,4 @@
+import ReactTypingEffect from "react-typing-effect";
 import { ModalEmailSubscribe, toggleEmailSubscribe } from "../Modals";
 import { Africa } from "../Icons";
 
@@ -10,7 +11,14 @@ export function DashboardHero() {
 
           <div className="md:col-span-2 relative">
             <h1 className="text-white text-6xl md:text-8xl font-bold mb-6 md:mb-8">
-              A smart <span className="inline-block">way to save</span>
+              A smart{" "}
+              <span className="inline-block">
+                way to{" "}
+                <ReactTypingEffect
+                  text={["save", "send money", "spend"]}
+                  className="text-yellow"
+                />
+              </span>
             </h1>
             <p className="text-2xl md:text-3xl text-white font-light mb-11 leading-normal">
               A simple way for Africans to <b>save and spend</b> their money in

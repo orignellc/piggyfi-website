@@ -198,6 +198,60 @@ export function DashboardHow() {
                 </ul>
               </div>
             </div>
+
+            <div className="text-white">
+              <h4 className="text-white text-2xl md:text-4xl text-center font-medium mb-8">
+                Building with Celo Platform
+              </h4>
+
+              <div className="rounded-3xl bg-purple-deep px-7 py-11 mb-10 md:flex items-stretch text-lg md:text-xl font-light card-shadow">
+                <ul>
+                  <li className="mb-14 flex">
+                    <Mark className="h-7 w-7 inline mt-1 mr-2 flex-shrink-0" />
+                    <div className="">
+                      <span className="font-medium">Celo Asset: </span>
+                      With the Celo Dollars (cUSD) and Celo Euro (cEUR) stable
+                      currencies tracking the US Dollar and EU Euro, we will be
+                      able to move value across countries faster, cheaper and
+                      allow the exchange of their local currency for the Celo
+                      asset to guide their savings against infaltion.
+                    </div>
+                  </li>
+                  <li className="mb-14 flex">
+                    <Mark className="h-7 w-7 inline mt-1 mr-2 flex-shrink-0" />
+                    <div className="">
+                      <span className="font-medium">Low Fees: </span>
+                      With the volume of daily transactions that would be
+                      carried out on our platform daily, Celo offers us
+                      Ultra-low network transaction fees thereby saving us a lot
+                      of costs.
+                    </div>
+                  </li>
+                  <li className="mb-14 flex">
+                    <Mark className="h-7 w-7 inline mt-1 mr-2 flex-shrink-0" />
+                    <div className="">
+                      <span className="font-medium">Staking: </span>
+                      We will take advantage of Celo POS (Proof of Stake) used
+                      to secure the network, and use saved assets on our
+                      platform to generate yield which is in turn distributed as
+                      an interest to our user’s savings.
+                    </div>
+                  </li>
+                  <li className="mb-14 flex">
+                    <Mark className="h-7 w-7 inline mt-1 mr-2 flex-shrink-0" />
+                    <div className="">
+                      <span className="font-medium">
+                        Optimized for Financial Application:{" "}
+                      </span>
+                      We are looking to leverage Celo’s industry-leading
+                      decentralized phone number verification which allows users
+                      to easily send or request digital currencies across the
+                      border from any mobile number
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
       </div>
