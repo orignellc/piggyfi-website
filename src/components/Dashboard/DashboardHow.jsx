@@ -228,11 +228,10 @@ export function DashboardHow() {
                   <li className="mb-14 flex">
                     <Mark className="h-7 w-7 inline mt-1 mr-2 flex-shrink-0" />
                     <div className="">
-                      <span className="font-medium">Staking: </span>
-                      We will take advantage of Celo POS used to secure the
-                      network, and use saved assets on our platform to generate
-                      yield which is in turn distributed as an interest to our
-                      user’s savings.
+                      <span className="font-medium">Yield Generation: </span>
+                      We will generate interest on users’ savings by providing
+                      users’ savings as liquidity to a lending protocol deployed
+                      on the Celo network, such as Aave finance.
                     </div>
                   </li>
                   <li className="mb-14 flex">
